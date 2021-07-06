@@ -1,12 +1,11 @@
 import React from 'react';
+import './Footer.css';
 
 export default function Footer(){
     return(
         <footer className="fixed-bottom">
-            <ul>
-                <li>Career</li>
-                <li>Terms &amp Conditions </li>
-            </ul>
+           <a href="#" >Career </a> | 
+           <a href="#"> Terms & Conditions </a>
         </footer>  
     );
 }

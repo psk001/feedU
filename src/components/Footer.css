@@ -1,0 +1,19 @@
+footer {
+    background-color: black;
+    position: fixed;
+    height: 25px;
+    bottom: 0;
+    width: 100%;
+    margin-top: 5%;
+}
+
+footer > a { 
+    text-decoration: none;
+    color:white; 
+    size: 10px;
+}
+
+
+a:hover{ text-decoration: none; }
+
+
