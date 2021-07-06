@@ -1,7 +1,7 @@
 import React from "react";
 import './Body.css';
-import advImg from '../images\\advertiser.png';
-import userImg from '../images\\user.png';
+import advImg from '../images/advertiser.png';
+import userImg from '../images/user.png';
 
 export default function Body (){
     return (
