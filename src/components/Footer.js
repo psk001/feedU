@@ -2,10 +2,11 @@ import React from 'react';
 
 export default function Footer(){
     return(
-        <div className="foot">
+        <footer className="fixed-bottom">
             <ul>
-                <li></li>
+                <li>Career</li>
+                <li>Terms &amp Conditions </li>
             </ul>
-        </div>  
+        </footer>  
     );
 }
