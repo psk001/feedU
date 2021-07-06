@@ -1,0 +1,25 @@
+body{
+    background-color: #1E90FF;
+    font-size: 20px;
+}
+
+.navbar-brand{
+    font-family: 'Lobster Two', cursive;
+    color: white !important;
+    font-size: 40px ;
+    padding-top: 5px;
+}
+
+.head-tag{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    line-height: 80%;
+}
+
+@media (min-width: 768px){
+.navbar-nav>li>a {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+}
