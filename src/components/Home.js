@@ -1,9 +1,10 @@
-import React from "react";
-import './Body.css';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Home.css';
 import advImg from '../images/advertiser.png';
 import userImg from '../images/user.png';
 
-export default function Body (){
+export default function Home (){
     return (
         
         <div className="container-fluid body-component">
@@ -11,7 +12,7 @@ export default function Body (){
                 <div className=" user-set-up">
                     <img className="user-display rounded-circle" src= {advImg} alt={"leading to advertisement page"} />
                     <figcaption> Have a place here? Want to advertise? <br/> Lets go!</figcaption>
-                    <a href="#" className="btn btn-info user-creator" role="button">Advertise</a> 
+                    <Link to="#" className="btn btn-info user-creator" role="button">Advertise</Link> 
                 </div>
             </div>
 
@@ -19,7 +20,7 @@ export default function Body (){
                 <div className="user-set-up">
                     <img className="user-display rounded-circle" src={userImg} alt={"leading to explore page"} />
                     <figcaption> Lookin for something? Want to explore? <br/> Hop in! </figcaption>
-                    <a href="#" className="btn btn-info user-creator" role="button">Lets Explore</a>
+                    <Link to="#" className="btn btn-info user-creator" role="button">Lets Explore</Link>
                 </div>
             </div>
         </div>
