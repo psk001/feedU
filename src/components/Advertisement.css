@@ -1,0 +1,16 @@
+.card-img-top{
+    display: block;
+    margin: auto;
+    border-radius: 0 0 10% 10%;
+}
+.card{
+    background-color: rgba(235, 231, 24, 0.993);
+    margin-bottom:20px ;
+    border-radius: 0 0 9% 9%;
+}
+
+.card-text{
+    font-size: 15px;
+    overflow: hidden;
+    text-align: center;
+}

@@ -5,10 +5,16 @@ import './Header.css';
 export default function Header (props){
 
     const [isActive, setActive] =  useState(false);
+    // const [headerOpen, setHeaderOpen] = useState(false);
 
     const toggleClass = () => {
         setActive(!isActive);
     };
+
+    // const toggleHeader = () => {
+    //     setHeaderOpen(prev => !prev)
+    // };
+
 
     return (
         <div className="navigator">
@@ -43,12 +49,13 @@ export default function Header (props){
                     </ul>
 
                     <ul className="nav navbar-nav navbar-right">
-                        <li><Link to="#"><span className="glyphicon glyphicon-user"></span> Sign Up</Link></li>
-                        <li><Link to="#"><span className="glyphicon glyphicon-log-in"></span> Login</Link></li>
+                        <li><Link to="/signup"><span className="glyphicon glyphicon-user"></span> Sign Up</Link></li>
+                        <li><Link to="/login"><span className="glyphicon glyphicon-log-in"></span> Login</Link></li>
                     </ul>
 
                 </div>
             </nav>
+        { /*    <button onClick={toggleHeader} > {headerOpen? "Close" : "Open"} </button> */}
         </div>
     );
 }

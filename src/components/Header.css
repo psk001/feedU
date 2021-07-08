@@ -6,20 +6,42 @@ body{
 .navbar-brand{
     font-family: 'Lobster Two', cursive;
     color: white !important;
-    font-size: 40px ;
+    font-size: 35px ;
     padding-top: 5px;
 }
 
 .head-tag{
     font-size: 20px;
     margin-left: 10px;
-    margin-top: 10px;
-    line-height: 80%;
+    /* margin-top: 20px;
+    line-height: 80%; */
 }
 
-@media (min-width: 768px){
-.navbar-nav>li>a {
-    padding-top: 15px;
-    padding-bottom: 20px;
-}
+@media (max-width: 768px){
+
+    .navbar-nav>li>a {
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+
+    .navbar-nav button {
+        position: fixed;
+        right: 100px;
+        top: 20px;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    .navbar {
+        overflow-y: scroll;
+        list-style: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 40vh;
+        width: 0;
+        overflow: hidden;
+        z-index: 3;
+    }
+
 }
