@@ -1,7 +1,19 @@
-import React, { Component } from "react";
+import React from "react";
+import { GoogleLogin } from "react-google-login";
 
-export default class Login extends Component {
-    render() {
+const clientId = '941371050165-kahd86eha2gmckvp9bab7cvl1aqvj6ce.apps.googleusercontent.com';
+
+export default function Login () {
+
+    const onSuccess = (res) => {
+        console.log('[Login Success] current user:',  res.profileObj);
+    };
+
+    const onFailure = (res) => {
+        console.log('[Login Failed] res: ', res);
+    };
+
+
         return (
             <form className="auth-inner">
                 <h3>Sign In</h3>
@@ -25,9 +37,17 @@ export default class Login extends Component {
 
                 <button type="submit" className="btn btn-primary btn-block">Submit</button>
                 <p className="forgot-password text-right">
-                    Forgot <a href="#">password?</a>
+                    <a href="#">Forgot password?</a>
                 </p>
+
+                <GoogleLogin
+                    clientId = {clientId} 
+                    buttonText = 'Login With Google'
+                    onSuccess = {onSuccess}
+                    onFailure = {onFailure}
+                    cookiePolicy = {'single_host_origin'}
+                    isSignedIn={true}
+                />
             </form>
         );
     }
-}
