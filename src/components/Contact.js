@@ -9,7 +9,7 @@ export default function Contact(){
             <h1>Developer Connect </h1>
             <SocialIcon className="connect" url="https://github.com/psk001" fgColor="white" />
             <SocialIcon className="connect" url="https://twitter.com/pr_psk?s=09" bgColor="black" fgColor="white" />
-            <SocialIcon className="connect" url="https://www.linkedin.com/feed/" bgColor="black" fgColor="white" label="linkedin" />
+            <SocialIcon className="connect" url="https://www.linkedin.com/in/pskprateek/" bgColor="black" fgColor="white" label="linkedin" />
         </div>
     );
 } 
