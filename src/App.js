@@ -9,6 +9,8 @@ import Explore from './components/Explore';
 import Contact from './components/Contact';
 import SignUp from './components/Signup';
 import Login from './components/Login';
+import Logout from './components/Logout';
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
         <Route path="/explore" component={Explore} exact />
         <Route path="/contact" component={Contact} exact />
         <Route path="/signup" component={SignUp} exact/>
+        <Route path="/logout" component={Logout} exact/>
         <Route path="/login" component={Login} exact/>
         <Route component={Error} />
       </Switch>
