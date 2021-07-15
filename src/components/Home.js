@@ -8,19 +8,19 @@ export default function Home (){
     return (
         
         <div className="container-fluid body-component">
-            <div className="col-md-4 col-md-offset-2">
-                <div className=" user-set-up">
-                    <img className="user-display rounded-circle" src= {advImg} alt={"leading to advertisement page"} />
-                    <figcaption> Have a place here? Want to advertise? <br/> Lets go!</figcaption>
-                    <Link to="#" className="btn btn-info user-creator" role="button">Advertise</Link> 
+            <div className="col-md-4 col-sm-6 ">
+                <div className=" user-type-container">
+                    <img className="user-image-display" src= {advImg} alt={"leading to advertisement page"} />
+                    <figcaption className="box-caption"> Have a place here? Want to advertise? <br/> Lets go!</figcaption>
+                    <Link to="#" className="btn btn-info " role="button">Advertise</Link> 
                 </div>
             </div>
 
-            <div className="col-md-4">
-                <div className="user-set-up">
-                    <img className="user-display rounded-circle" src={userImg} alt={"leading to explore page"} />
-                    <figcaption> Lookin for something? Want to explore? <br/> Hop in! </figcaption>
-                    <Link to="#" className="btn btn-info user-creator" role="button">Lets Explore</Link>
+            <div className="col-md-4 col-sm-6 ">
+                <div className="user-type-container">
+                    <img className="user-image-display" src={userImg} alt={"leading to explore page"} />
+                    <figcaption className="box-caption" > Lookin for something? Want to explore? <br/> Hop in! </figcaption>
+                    <Link to="#" className="btn btn-info " role="button">Lets Explore</Link>
                 </div>
             </div>
         </div>

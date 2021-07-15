@@ -4,9 +4,9 @@ import './Footer.css';
 
 export default function Footer(){
     return(
-        <footer className="fixed-bottom">
+        <div className="footer">
            <Link to="#" >Career </Link> | 
            <Link to="#"> Terms & Conditions </Link>
-        </footer>  
+        </div>  
     );
-}
+} 

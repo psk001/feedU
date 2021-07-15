@@ -5,15 +5,15 @@ import './Header.css';
 export default function Header (props){
 
     const [isActive, setActive] =  useState(false);
-    // const [headerOpen, setHeaderOpen] = useState(false);
+    const [headerOpen, setHeaderOpen] = useState(false);
 
     const toggleClass = () => {
         setActive(!isActive);
     };
 
-    // const toggleHeader = () => {
-    //     setHeaderOpen(prev => !prev)
-    // };
+    const toggleHeader = () => {
+        setHeaderOpen(prev => !prev)
+    };
 
 
     return (
@@ -30,7 +30,7 @@ export default function Header (props){
                         </Link>
                     </div>
 
-                    <ul className="nav navbar-nav">
+                    <ul className="nav navbar-nav dropdown-nav">
                         <li className={isActive ? 'active': null} onClick={toggleClass}> 
                             <Link to="/">Home</Link>
                         </li>
@@ -48,14 +48,16 @@ export default function Header (props){
                         </li>
                     </ul>
 
-                    <ul className="nav navbar-nav navbar-right">
+                    <ul className="nav navbar-nav navbar-right dropdown-nav">
                         <li><Link to="/signup"><span className="glyphicon glyphicon-user"></span> Sign Up</Link></li>
                         <li><Link to="/login"><span className="glyphicon glyphicon-log-in"></span> Login</Link></li>
                     </ul>
 
                 </div>
             </nav>
-        { /*    <button onClick={toggleHeader} > {headerOpen? "Close" : "Open"} </button> */}
+            <button class="menu-toggle" id="toggle-menu">
+                toggle menu
+            </button> 
         </div>
     );
 }

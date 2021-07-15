@@ -5,7 +5,7 @@ import './Advertisement.css';
 
 export default function Advertisement(){
     return (
-        <section id="advertisements" className="">
+         <div id="advertisements" className="">  
             <div className="">
                 <div className="">
                    {/* <CodeIcon className="mx-auto inline-block w-10 mb-4" /> */}
@@ -18,7 +18,7 @@ export default function Advertisement(){
                         fuga dolore.
                     </p>
                 </div>
-                <div className="">
+                <div className="col">
                     {advertisements.map((items) => (
                         <a
                             href={items.link}
@@ -46,6 +46,6 @@ export default function Advertisement(){
                     ))}
                 </div>
             </div>
-        </section>        
+        </div>        
     );
 } 

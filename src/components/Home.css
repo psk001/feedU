@@ -1,40 +1,46 @@
-.body-component{
-    margin-top: 10%;
-}
+.body-component{ margin-top: 10%; }
+ 
 
-
-.user-set-up{
+.user-type-container{
     border: 0.5px solid rgba(235, 205, 38, 0.678);
-    background-color: #8349cf;
+    background-color: #0b96db;
     border-radius: 10%;
-    box-shadow: 0 4px 8px 0 rgba(235, 205, 38, 0.678), 0 6px 20px 0 rgba(221, 209, 42, 0.19);
+    box-shadow: 0 -4px 8px 0 rgba(235, 205, 38, 0.678), 0 6px 20px 0 rgba(221, 209, 42, 0.19);
 }
 
-.user-set-up:hover{
+.user-type-container:hover{
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-.user-display{
+ 
+.user-image-display{
     display: block;
     margin: auto;
     border-radius: 50%;
 }
 
-figcaption{
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-    margin: 5% 0 5% 0;
-}
 
-.user-creator{
-    width: 30%;
-    background-color: #dbc927;
+.btn{
+    width: 10em;
+    position: relative;
+    bottom: 1em;
+    background-color: darkcyan;
     border: 1px solid black ;
-    margin-inline: 35%;
     border-radius: 20px;
 }
 
-.user-creator:hover{
+.btn:hover{
     background-color: #009474;
 }
+
+.box-caption{
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    word-wrap: break-word;
+    margin: 5% 0 5% 0;
+}
+
+/* @media (max-width: 768px){
+   
+} */

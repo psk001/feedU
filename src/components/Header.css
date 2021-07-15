@@ -17,31 +17,65 @@ body{
     line-height: 80%; */
 }
 
+.menu-toggle{
+    position: absolute;
+    top: -5em;
+    right: -5em;
+}
+
 @media (max-width: 768px){
 
-    .navbar-nav>li>a {
-        padding-top: 15px;
-        padding-bottom: 20px;
-    }
+    .menu-toggle{
+        position: absolute;
+        top: 1.2em;
+        right: 0.1em;
 
-    .navbar-nav button {
-        position: fixed;
-        right: 100px;
-        top: 20px;
-        z-index: 5;
-        cursor: pointer;
-    }
+        border: 0;
+        background-color: transparent;
 
-    .navbar {
-        overflow-y: scroll;
-        list-style: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 40vh;
-        width: 0;
+        font-size: 3em;
+        width: 1em;
+        height: 1em;
+        line-height: 0.5;
+        text-indent: 5em;
+        white-space: nowrap;
         overflow: hidden;
-        z-index: 3;
+    }
+
+    .menu-toggle ::after{
+        position: absolute;
+        top: 0.2em;
+        left: 0.2em;
+        display: block;
+        content: '/2261';
+        background-color: white;
+        text-indent: 0;
+    }
+
+    .dropdown-nav{
+        display: none;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: 0;
+    }
+
+    .dropdown-nav.is-open .dropdown-nav{
+        display: block;
     }
 
 }
+ 
+/* <nav class="menu" id="main-menu">
+ <button class="menu-toggle" id="toggle-menu">
+ toggle menu
+ </button>
+ <div class="menu-dropdown">
+ <ul class="nav-menu">
+ <li><a href="/about.html">About</a></li>
+ <li><a href="/shop.html">Shop</a></li>
+ <li><a href="/menu.html">Menu</a></li>
+ <li><a href="/brew.html">Brew</a></li>
+ </ul>
+ </div>
+</nav> */

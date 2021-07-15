@@ -1,9 +1,25 @@
 import React from "react";
 import { GoogleLogin } from "react-google-login";
+//import { useHistory } from "react-router";
 
 const clientId = '941371050165-kahd86eha2gmckvp9bab7cvl1aqvj6ce.apps.googleusercontent.com';
 
 export default function Login () {
+
+    // const history = useHistory();
+
+    // async function handleSubmit(event){
+    //     event.preventDefault();
+
+    //     try{
+    //         // await Auth.signIn(email, password);
+    //         userHasAuthenticated(true);
+    //         history.push("/");
+    //     }   
+    //     catch (e){
+    //         alert(e.message);
+    //     }
+    // }
 
     const onSuccess = (res) => {
         console.log('[Login Success] current user:',  res.profileObj);
