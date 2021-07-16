@@ -19,7 +19,7 @@ export default function Home (){
             <div className="mob-col col-md-4 col-sm-1 ">
                 <div className="user-type-container">
                     <img className="user-image-display" src={userImg} alt={"leading to explore page"} />
-                    <figcaption className="box-caption" > Lookin for something? Want to explore? <br/> Hop in! </figcaption>
+                    <figcaption className="box-caption" > Newbie in town? Want to explore? <br/> Hop in! </figcaption>
                     <Link to="/explore" className="btn btn-info " role="button">Lets Explore</Link>
                 </div>
             </div>

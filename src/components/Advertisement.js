@@ -5,7 +5,7 @@ import './Advertisement.css';
 
 export default function Advertisement(){
     return (
-         <div id="advertisements" className="">  
+         <div id="advertisements" className="container-fluid">  
             <div className="">
                 <div className="">
                    {/* <CodeIcon className="mx-auto inline-block w-10 mb-4" /> */}

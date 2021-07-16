@@ -43,10 +43,6 @@
 
 @media (max-width: 768px){
 
-    .mob-col-container{
-        height: 90vh;
-    }
-
    .mob-col{
        margin-top: 1em;  }
   
