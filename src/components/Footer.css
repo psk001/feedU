@@ -17,3 +17,9 @@
 a:hover{ text-decoration: none; }
 
 
+@media (max-width: 768px){
+    .footer{
+        height: 1fr;
+        margin-top: 0.5vh;
+    }
+}

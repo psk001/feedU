@@ -9,4 +9,4 @@ export default function Footer(){
            <Link to="#"> Terms & Conditions </Link>
         </div>  
     );
-} 
+}  

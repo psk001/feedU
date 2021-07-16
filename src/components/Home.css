@@ -41,6 +41,23 @@
     margin: 5% 0 5% 0;
 }
 
-/* @media (max-width: 768px){
-   
-} */
+@media (max-width: 768px){
+
+    .mob-col-container{
+        height: 90vh;
+    }
+
+   .mob-col{
+       margin-top: 1em;  }
+  
+    .user-image-display{
+        margin-top: 1fr;
+        height: 15vh;
+        width: 15vh;
+    }
+
+    .box-caption{margin: 5px;}
+
+    .btn{margin-top: 1em;}
+
+}
