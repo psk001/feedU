@@ -1,5 +1,6 @@
 import React from 'react';
 // import { CodeIcon } from "@heroicons/react/solid";
+
 import { advertisements } from '../data';
 import './Advertisement.css'; 
 
